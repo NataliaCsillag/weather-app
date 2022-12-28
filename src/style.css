@@ -24,6 +24,7 @@ li {
     font-family: 'Alegreya', serif;
     font-size: 18px;
     font-weight: 200;
+    text-transform: capitalize;
     text-align: left;
     height: 18px;
     margin: 0 auto;
@@ -47,7 +48,7 @@ li {
 }
 
 .rainfix {
-    padding: 3px;
+    padding: 5px;
     margin-top: 5px;
     display: inline;
     
