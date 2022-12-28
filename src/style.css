@@ -24,12 +24,14 @@ li {
     font-family: 'Alegreya', serif;
     font-size: 18px;
     font-weight: 200;
-    text-transform: capitalize;
     text-align: left;
     height: 18px;
     margin: 0 auto;
     padding: 5px;
 
+}
+li::first-letter {
+    text-transform: capitalize;
 }
 .space {
     margin: 10px;
