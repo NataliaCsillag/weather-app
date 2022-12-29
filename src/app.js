@@ -11,9 +11,6 @@ function formatDate(timestamp) {
     let days =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     let day = days[date.getDay()];
     return `${day} ${hours}:${minutes}`;
-
-
- 
 }
 
 function displayTemperature(response) {
@@ -23,12 +20,16 @@ let typeElement = document.querySelector("#type");
 let humidityElement = document.querySelector("#humidity");
 let windElement = document.querySelector("#wind");
 let dateElement = document.querySelector("#date");
+let iconElement = document.querySelector("#icon");
 temperatureElement.innerHTML = Math.round(response.data.main.temp);
 cityElement.innerHTML = response.data.name;
 typeElement.innerHTML = response.data.weather[0].description;
 humidityElement.innerHTML = response.data.main.humidity;
 windElement.innerHTML = Math.round(response.data.wind.speed);
 dateElement.innerHTML = formatDate(response.data.dt * 1000);
+iconElement.setAttribute("src", 
+`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 let apiKey = "05c2b16e8ce157a0f618d503eb809bb5";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Gaillard&appid=${apiKey}&units=metric`;
