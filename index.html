@@ -15,7 +15,26 @@
 </head>
 <body>
     <div class="container">
+        <div class="weather-app-wrapper">
         <div class="weather-app">
+            <form id="search-form">
+                <div class="row">
+                    <div class="col-10">
+                <input type="search" 
+                placeholder="Type a city"
+                 class="form-control" 
+                 id="city-input"
+                 autocomplete="off"
+                 />
+                </div>
+                <div class="col-2">
+                <input 
+                type="submit" 
+                value="Search" 
+                class="btn btn-primary" />
+                </div>
+                </div>
+            </form>
             <div class="space">
         <h1 id="city">
         </h1>
@@ -35,7 +54,8 @@
                 class="number"
                 />
                 <span class="number">
-                <strong id="temperature"></strong><span class="gradus">°C | <a href="*">°F</a></span>
+                <strong id="temperature"></strong>
+                <span class="gradus">°C | <a href="*">°F</a></span>
                 </span>
             </div>
             <div class="col-6">
@@ -56,6 +76,7 @@
      </div>
     </div>
             </div>
+        </div>
      
     <script src="src/app.js"></script>
         </body>
