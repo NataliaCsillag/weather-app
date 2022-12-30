@@ -1,14 +1,19 @@
 .weather-app {
     background-color:#579BB1 ;
-    max-width: 652px;
+    max-width: 530px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #265a6c;
     border-radius: 7px;
 }
+.weather-type {
+    display: block;
+    max-width: 100%;
+    width: 300px;
+}
+
 h1 {
     font-family: 'Alegreya',serif;
-    text-align: left;
     font-weight: 400;
     color: #313c5e;
     font-size: 30px; 
@@ -24,12 +29,12 @@ li {
     font-family: 'Alegreya', serif;
     font-size: 18px;
     font-weight: 200;
-    text-align: left;
+    text-align:left;
     height: 18px;
     margin: 0 auto;
     padding: 5px;
-
 }
+
 li::first-letter {
     text-transform: capitalize;
 }
@@ -70,5 +75,9 @@ li::first-letter {
     color: #FDE8CD;
     cursor:default;
     text-decoration: none;
-
+}
+.name {
+    display:block;
+    text-align: center;
+    color: #022631;
 }
